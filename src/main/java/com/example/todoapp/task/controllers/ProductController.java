@@ -1,8 +1,8 @@
-package com.example.todoapp.controllers;
+package com.example.todoapp.task.controllers;
 
-import com.example.todoapp.dtos.ProductRecordDTO;
-import com.example.todoapp.models.ProductModel;
-import com.example.todoapp.repositories.ProductRepository;
+import com.example.todoapp.task.dtos.ProductRecordDTO;
+import com.example.todoapp.task.models.ProductModel;
+import com.example.todoapp.task.repositories.ProductRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

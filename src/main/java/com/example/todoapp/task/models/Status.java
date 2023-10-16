@@ -1,4 +1,4 @@
-package com.example.todoapp.models;
+package com.example.todoapp.task.models;
 
 public enum Status {
     ACTIVE("active"),

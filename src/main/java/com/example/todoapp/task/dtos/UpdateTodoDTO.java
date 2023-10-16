@@ -1,6 +1,6 @@
-package com.example.todoapp.dtos;
+package com.example.todoapp.task.dtos;
 
-import com.example.todoapp.models.Status;
+import com.example.todoapp.task.models.Status;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 

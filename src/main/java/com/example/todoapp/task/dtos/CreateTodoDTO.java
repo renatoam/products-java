@@ -1,4 +1,4 @@
-package com.example.todoapp.dtos;
+package com.example.todoapp.task.dtos;
 
 import jakarta.validation.constraints.NotBlank;
 

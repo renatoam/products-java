@@ -1,4 +1,4 @@
-package com.example.todoapp.models;
+package com.example.todoapp.task.models;
 
 import jakarta.persistence.*;
 import org.springframework.hateoas.RepresentationModel;

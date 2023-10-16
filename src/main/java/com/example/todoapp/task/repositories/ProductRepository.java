@@ -1,6 +1,6 @@
-package com.example.todoapp.repositories;
+package com.example.todoapp.task.repositories;
 
-import com.example.todoapp.models.ProductModel;
+import com.example.todoapp.task.models.ProductModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
