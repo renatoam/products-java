@@ -1,6 +1,7 @@
 package com.example.todoapp.project;
 
 import com.example.todoapp.common.BaseController;
+import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
@@ -30,7 +31,7 @@ public class ProjectController extends BaseController {
     }
 
     @PostMapping
-    public ResponseEntity createProject(@RequestBody CreateProjectDTO createProjectDTO) {
+    public ResponseEntity createProject(@RequestBody @Valid CreateProjectDTO createProjectDTO) {
         Optional<Project> project = this.repository.findByName(createProjectDTO.name());
 
         if (!project.isEmpty()) {
@@ -44,7 +45,7 @@ public class ProjectController extends BaseController {
     }
 
     @PutMapping
-    public ResponseEntity updateProject(@RequestBody UpdateProjectDTO updateProjectDTO) {
+    public ResponseEntity updateProject(@RequestBody @Valid UpdateProjectDTO updateProjectDTO) {
         Optional<Project> project = this.repository.findById(updateProjectDTO.id());
 
         if (project.isEmpty()) {

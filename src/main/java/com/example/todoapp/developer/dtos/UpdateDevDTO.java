@@ -5,10 +5,10 @@ import jakarta.validation.constraints.NotBlank;
 
 import java.util.UUID;
 
-public record CreateDevDTO(
+public record UpdateDevDTO(
         @NotBlank String name,
-        @NotBlank String email,
         String stack,
         String expertise,
         UUID projectId
-) {}
+) {
+}
